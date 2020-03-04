@@ -1,0 +1,8 @@
+{
+  "name": "list-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wldls/list-check.git",
+  "author": "jiin <dslet2343@gmail.com>",
+  "license": "MIT"
+}
