@@ -5,8 +5,6 @@
 		bgRow: false,
 		bgCls: '',
 		bgColor: '',
-		berforeCheck:function(e){},
-		// berforeCheckAll:function(e){},
 		afterCheck:function(e){},
 		// afterCheckAll:function(e){}
 	}
@@ -43,8 +41,6 @@
 				$chkBox = $(opt.chkBox).not(':disabled'),
 				hasBgCls = opt.bgCls !== '',
 				hasBgCode = opt.bgColor !== '';
-
-				opt.berforeCheck.call(this, e);
 
 				// 체크된 tr에 bg색상 변경
 				var $target = $(e.target),
@@ -95,8 +91,6 @@
 				hasBgCls = opt.bgCls !== '',
 				hasBgCode = opt.bgColor !== '';
 
-			// opt.berforeCheckAll.call(this, e);
-			
 			// 전체선택할 때 하위 체크박스 모두선택				
 			if($(opt.chkAll).prop('checked')){
 				$chkBox.prop('checked', true);
