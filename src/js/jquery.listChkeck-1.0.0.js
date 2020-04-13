@@ -123,14 +123,14 @@
 				}
 			}
 
-			// opt.afterCheckAll.call(this, e);
+			opt.afterCheck.call(this, e);
 		}
 	}
 
 	$.fn.listCheck = function(options){
-		// var plugin = new Plugin(this, options);
-		return this.each(function(){
-			var plugin = new Plugin(this, options);
-		});
+		var plugin = new Plugin(this, options);
+		// return this.each(function(){
+		// 	var plugin = new Plugin(this, options);
+		// });
 	};	
 }(jQuery));
