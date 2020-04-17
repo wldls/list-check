@@ -19,11 +19,10 @@
 	Plugin.prototype = {
 		init: function(){
 			var that = this,
-				opt = that.options,
-				$element = that.e;
+				opt = that.options;
 
 			// 선택
-			$element.on('click', function(e){
+			$(document).on('click', opt.chkBox, function(e){
 				var target = $(e.target);
 				if(!target.prop('disabled')){
 					that.checkEvent(e);
